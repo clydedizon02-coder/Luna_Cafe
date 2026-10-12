@@ -1,0 +1,48 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="container hero-content">
+        <h1>Welcome to <span>Luna Café</span></h1>
+        <p class="hero-subtitle">A cozy corner for students, dreamers, and coffee lovers in North La Union.</p>
+        <div class="hero-buttons">
+            <a href="{% url 'main:menu' %}" class="btn btn-primary">View Our Menu</a>
+            <a href="{% url 'main:contact' %}" class="btn btn-outline">Visit Us</a>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <div class="container">
+        <h2 class="section-title">Why Students Love Us</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">☕</div>
+                <h3>Specialty Coffee</h3>
+                <p>Locally sourced beans, expertly roasted and brewed for the perfect cup every time.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📚</div>
+                <h3>Study-Friendly</h3>
+                <p>Quiet corners, free Wi-Fi, and comfortable seating designed for focused study sessions.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🥐</div>
+                <h3>Fresh Pastries</h3>
+                <p>Daily-baked croissants, muffins, and local treats that pair perfectly with your coffee.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <div class="container">
+        <h2>Ready for your next coffee break?</h2>
+        <p>Come experience the warmth of Luna Café today.</p>
+        <a href="{% url 'main:contact' %}" class="btn btn-primary">Get Directions</a>
+    </div>
+</section>
+{% endblock %}

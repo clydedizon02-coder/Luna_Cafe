@@ -1,0 +1,27 @@
+{% load static %}
+<header class="navbar">
+    <div class="container nav-container">
+        <a href="{% url 'main:home' %}" class="logo">
+            <span class="logo-icon">☕</span>
+            <span class="logo-text">Luna Café</span>
+        </a>
+        <nav class="nav-links">
+            <a href="{% url 'main:home' %}" class="{% if request.resolver_match.url_name == 'home' %}active{% endif %}">Home</a>
+            <a href="{% url 'main:about' %}" class="{% if request.resolver_match.url_name == 'about' %}active{% endif %}">About</a>
+            <a href="{% url 'main:menu' %}" class="{% if request.resolver_match.url_name == 'menu' %}active{% endif %}">Menu</a>
+            <a href="{% url 'main:gallery' %}" class="{% if request.resolver_match.url_name == 'gallery' %}active{% endif %}">Gallery</a>
+            <a href="{% url 'main:contact' %}" class="{% if request.resolver_match.url_name == 'contact' %}active{% endif %}">Contact</a>
+        </nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+
+<script>
+    document.getElementById('menuToggle').addEventListener('click', function() {
+        document.querySelector('.nav-links').classList.toggle('show');
+    });
+</script>

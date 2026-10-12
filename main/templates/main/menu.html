@@ -1,0 +1,99 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Menu{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1>Our Menu</h1>
+        <p>Crafted with care, served with love.</p>
+    </div>
+</section>
+
+<section class="menu-section">
+    <div class="container">
+        <h2 class="menu-category">☕ Signature Coffee</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Luna Latte</h3>
+                    <p>Espresso, steamed milk, and a touch of vanilla</p>
+                </div>
+                <span class="price">₱120</span>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Campus Cold Brew</h3>
+                    <p>Slow-steeped for 18 hours, smooth and bold</p>
+                </div>
+                <span class="price">₱110</span>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Caramel Macchiato</h3>
+                    <p>Layered espresso, milk, and caramel drizzle</p>
+                </div>
+                <span class="price">₱135</span>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Spanish Latte</h3>
+                    <p>Sweetened condensed milk meets rich espresso</p>
+                </div>
+                <span class="price">₱130</span>
+            </div>
+        </div>
+
+        <h2 class="menu-category">🥐 Pastries & Snacks</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Butter Croissant</h3>
+                    <p>Flaky, golden, and freshly baked every morning</p>
+                </div>
+                <span class="price">₱75</span>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Chocolate Muffin</h3>
+                    <p>Rich cocoa with molten chocolate center</p>
+                </div>
+                <span class="price">₱85</span>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Banana Bread</h3>
+                    <p>Moist, homemade with local bananas</p>
+                </div>
+                <span class="price">₱70</span>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Cheese Pandesal</h3>
+                    <p>Soft Filipino classic with creamy cheese filling</p>
+                </div>
+                <span class="price">₱45</span>
+            </div>
+        </div>
+
+        <h2 class="menu-category">🥤 Refreshers</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Mango Smoothie</h3>
+                    <p>Fresh local mangoes blended to perfection</p>
+                </div>
+                <span class="price">₱95</span>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Iced Matcha</h3>
+                    <p>Ceremonial-grade matcha with oat milk option</p>
+                </div>
+                <span class="price">₱125</span>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

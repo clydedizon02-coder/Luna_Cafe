@@ -1,0 +1,51 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Gallery{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <div class="container">
+        <h1>Gallery</h1>
+        <p>Moments from our café and community.</p>
+    </div>
+</section>
+
+<section class="gallery-section">
+    <div class="container">
+        <div class="gallery-grid">
+            <div class="gallery-item large">
+                <div class="gallery-placeholder" style="background: linear-gradient(135deg, #8B5E3C, #D4A574);">
+                    <span>☕ Our Signature Brews</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-placeholder" style="background: linear-gradient(135deg, #5C4033, #A67B5B);">
+                    <span>🥐 Fresh Pastries</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-placeholder" style="background: linear-gradient(135deg, #3D2B1F, #8B6914);">
+                    <span>📚 Study Corner</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-placeholder" style="background: linear-gradient(135deg, #6F4E37, #C4A484);">
+                    <span>🌿 Cozy Ambiance</span>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-placeholder" style="background: linear-gradient(135deg, #4A3728, #B8956A);">
+                    <span>👥 Community Events</span>
+                </div>
+            </div>
+            <div class="gallery-item large">
+                <div class="gallery-placeholder" style="background: linear-gradient(135deg, #2C1810, #8B5E3C);">
+                    <span>🌙 Evening Vibes</span>
+                </div>
+            </div>
+        </div>
+        <p class="gallery-note">Photos are illustrative placeholders. Real images can be added later in the static/images folder.</p>
+    </div>
+</section>
+{% endblock %}
